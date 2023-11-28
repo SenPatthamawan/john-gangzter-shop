@@ -8,11 +8,31 @@
 
 
 html {
-    height: 100vh;
+    height: 1000vh;
     border: 3px solid #6f2961;
     border-radius: 5px;
     font-family: 'Raleway', sans-serif;
 }
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header__container {
+    height: 64px;
+}
+
+.main__container {
+    flex: 1;
+}
+
+/* footer {
+    background: #d6c5d3;
+    height: 64px;
+} */
+
 
 nav {
     height: 64px;
@@ -99,7 +119,7 @@ nav {
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 1rem;
     list-style: none;
 }
 
@@ -111,3 +131,94 @@ nav {
     padding: 2px;
     text-decoration: none;
 }
+
+/* main > product__container */
+
+.product__head {
+    display: flex;
+    background-color: white;
+
+}
+
+.category {
+    padding: 1rem;
+    flex: 1;
+}
+.category span {
+    border: 3px solid #9a6e3b;
+    border-radius: 50px;
+    background: #ab8b61;
+    color: #3d2a1c;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.filter , .sort__by  {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+
+}
+
+.filter select , .sort__by select{
+    border-radius: 50px;
+    padding: 3px;
+}
+
+/* Product__card */
+
+.product__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.product__card {
+    box-shadow: 0 4px 8px 0 #d6c5d3;
+    width: 300px;
+    /* height: 300px; */
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    border: 1px solid #6f2961;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+.product__card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #6f2961;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .product__card button:hover {
+    opacity: 0.7;
+  }
+
+  .product__card img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+  } 
+
+  .product__card p {
+    color: grey;
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .product__card span {
+    padding: 5px;
+  }
