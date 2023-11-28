@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Raleway&family=Roboto:ital,wght@0,400;0,500;1,300&family=Rubik&display=swap');
+
+
+html {
+    height: 100vh;
+    border: 3px solid #6f2961;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    border: 1px solid red;
+    height: 64px;
+    display: flex;
+    background-color: #6f2961;
+    color: white;
+}
+
+.nav__left {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav__right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding: 0 1rem 0 0;
+}
+
+.nav__left img {
+    height: 40px;
+    padding: 0 1rem 0 1rem;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.keywords__search {
+    flex: 0.5;
+    border: 1px solid #6f2961;
+    border-radius: 50px;
+    padding: 3px 3px 3px 40px;
+    background: white url("search.svg") no-repeat 13px;
+}
+
+.submit__btn {
+    margin: 2px;
+    padding: 3px;
+    border: 1px solid #6f2961;
+    border-radius: 50px;
+    color:#6f2961;
+}
